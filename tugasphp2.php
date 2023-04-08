@@ -116,16 +116,18 @@ if ($status == 'merried' && $children >= 1 && $children <= 2) {
 }
 
 
-$total_salary = $salary + $allowance_f + $allowance_p
+$total_salary = $salary + $allowance_f + $allowance_p;
 
-if(isset($input)){
-    ?>
-    Nama Pegawai : <?= $name?>
-</br> Alamat : <?= $addres?>
-</br> Jabatan : <?= $position?>
-</br> Status : <?= $status?>
-</br> Jumlah Anak : <?= $children ?>
-</br> Agama : <?= $religion?>
-</br> Gaji Pokok : <?= $salary?>
-</br> Total Gaji : <?= $total_salary?>
+
+
+if (isset($input)) {
+?>
+    Nama Pegawai : <?= $name ?>
+    </br> Alamat : <?= $addres ?>
+    </br> Jabatan : <?= $position ?>
+    </br> Status : <?= $status ?>
+    </br> Jumlah Anak : <?= $children ?>
+    </br> Agama : <?= $religion ?>
+    </br> Gaji Pokok : <?= $salary ?>
+    </br> Total Gaji : <?= $total_salary ?>
 <?php } ?>
